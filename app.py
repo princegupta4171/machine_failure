@@ -1,5 +1,7 @@
 import streamlit as st
 import pickle
+import os
+import pickle
 import numpy as np
 import time
 
@@ -11,7 +13,12 @@ st.set_page_config(
 )
 
 # Load model
-model1 = pickle.load(open("machinefailure.pkl", "rb"))
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "machinefailure.pkl")
+
+with open(MODEL_PATH, "rb") as f:
+    model1 = pickle.load(f)
 
 # -------------------- CSS --------------------
 st.markdown("""
