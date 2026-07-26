@@ -160,4 +160,4 @@ if predict:
         st.balloons()
 
 # Footer
-st.markdown("<br><hr><div class='footer'>Made with ❤️ using Streamlit</div>", unsafe_allow_html=True)
+st.markdown("<br><hr><div class='footer'>Made by ❤️ Prince Gupta</div>", unsafe_allow_html=True)
